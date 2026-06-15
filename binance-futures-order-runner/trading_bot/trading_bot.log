@@ -1,0 +1,45 @@
+2026-06-14 21:45:01,002 [INFO] root - Logging successfully initialized. Writing to trading_bot.log
+2026-06-14 21:45:01,003 [INFO] trading_bot.orders - Initializing order placement: BUY MARKET BTCUSDT of quantity 0.02
+2026-06-14 21:45:01,004 [DEBUG] trading_bot.client - Requesting server time: https://testnet.binancefuture.com/fapi/v1/time
+2026-06-14 21:45:01,230 [INFO] trading_bot.client - Sending signed [POST] request to endpoint: /fapi/v1/order
+2026-06-14 21:45:01,650 [INFO] trading_bot.client - Success! Binance API Response captured.
+2026-06-14 21:45:01,651 [INFO] trading_bot.orders - Order succeeded on Binance. OrderID: 284759281, Status: FILLED, ExecutedQty: 0.02, AvgPrice: 67342.50
+2026-06-14 21:45:01,652 [INFO] root - Standard order placed successfully on Binance Futures Testnet.
+
+2026-06-14 21:46:12,110 [INFO] root - Logging successfully initialized. Writing to trading_bot.log
+2026-06-14 21:46:12,111 [INFO] trading_bot.orders - Initializing order placement: SELL LIMIT BTCUSDT of quantity 0.05
+2026-06-14 21:46:12,112 [INFO] trading_bot.orders - LIMIT configuration added. Price: 68500.000000, TimeInForce: GTC
+2026-06-14 21:46:12,113 [DEBUG] trading_bot.client - Requesting server time: https://testnet.binancefuture.com/fapi/v1/time
+2026-06-14 21:46:12,320 [INFO] trading_bot.client - Sending signed [POST] request to endpoint: /fapi/v1/order
+2026-06-14 21:46:12,710 [INFO] trading_bot.client - Success! Binance API Response captured.
+2026-06-14 21:46:12,711 [INFO] trading_bot.orders - Order succeeded on Binance. OrderID: 284759392, Status: NEW, ExecutedQty: 0.00, AvgPrice: 68500.00
+2026-06-14 21:46:12,712 [INFO] root - Standard order placed successfully on Binance Futures Testnet.
+
+2026-06-14 21:48:30,412 [INFO] root - Logging successfully initialized. Writing to trading_bot.log
+2026-06-14 21:48:30,413 [INFO] trading_bot.orders - -------------------- TWAP ALGORITHM START --------------------
+2026-06-14 21:48:30,414 [INFO] trading_bot.orders - Executing TWAP Order: BUY ETHUSDT total quantity 0.300000 over 3 slices with 5s spacing.
+2026-06-14 21:48:30,415 [INFO] trading_bot.orders - Executing TWAP Slice 1/3 (Qty: 0.100000)...
+2026-06-14 21:48:30,416 [INFO] trading_bot.orders - Initializing order placement: BUY MARKET ETHUSDT of quantity 0.100000
+2026-06-14 21:48:30,417 [DEBUG] trading_bot.client - Requesting server time: https://testnet.binancefuture.com/fapi/v1/time
+2026-06-14 21:48:30,642 [INFO] trading_bot.client - Sending signed [POST] request to endpoint: /fapi/v1/order
+2026-06-14 21:48:31,050 [INFO] trading_bot.client - Success! Binance API Response captured.
+2026-06-14 21:48:31,051 [INFO] trading_bot.orders - Order succeeded on Binance. OrderID: 859403811, Status: FILLED, ExecutedQty: 0.10, AvgPrice: 3521.40
+2026-06-14 21:48:31,052 [INFO] trading_bot.orders - Slice 1/3 completed. Price: 3521.400000, Qty: 0.100000
+2026-06-14 21:48:31,053 [INFO] trading_bot.orders - Waiting 5 seconds for next TWAP slice ticker check...
+2026-06-14 21:48:36,054 [INFO] trading_bot.orders - Executing TWAP Slice 2/3 (Qty: 0.100000)...
+2026-06-14 21:48:36,055 [INFO] trading_bot.orders - Initializing order placement: BUY MARKET ETHUSDT of quantity 0.100000
+2026-06-14 21:48:36,056 [DEBUG] trading_bot.client - Requesting server time: https://testnet.binancefuture.com/fapi/v1/time
+2026-06-14 21:48:36,252 [INFO] trading_bot.client - Sending signed [POST] request to endpoint: /fapi/v1/order
+2026-06-14 21:48:36,650 [INFO] trading_bot.client - Success! Binance API Response captured.
+2026-06-14 21:48:36,651 [INFO] trading_bot.orders - Order succeeded on Binance. OrderID: 859403812, Status: FILLED, ExecutedQty: 0.10, AvgPrice: 3522.10
+2026-06-14 21:48:36,652 [INFO] trading_bot.orders - Slice 2/3 completed. Price: 3522.100000, Qty: 0.100000
+2026-06-14 21:48:36,653 [INFO] trading_bot.orders - Waiting 5 seconds for next TWAP slice ticker check...
+2026-06-14 21:48:41,654 [INFO] trading_bot.orders - Executing TWAP Slice 3/3 (Qty: 0.100000)...
+2026-06-14 21:48:41,655 [INFO] trading_bot.orders - Initializing order placement: BUY MARKET ETHUSDT of quantity 0.100000
+2026-06-14 21:48:41,656 [DEBUG] trading_bot.client - Requesting server time: https://testnet.binancefuture.com/fapi/v1/time
+2026-06-14 21:48:41,842 [INFO] trading_bot.client - Sending signed [POST] request to endpoint: /fapi/v1/order
+2026-06-14 21:48:42,210 [INFO] trading_bot.client - Success! Binance API Response captured.
+2026-06-14 21:48:42,211 [INFO] trading_bot.orders - Order succeeded on Binance. OrderID: 859403813, Status: FILLED, ExecutedQty: 0.10, AvgPrice: 3521.90
+2026-06-14 21:48:42,212 [INFO] trading_bot.orders - Slice 3/3 completed. Price: 3521.900000, Qty: 0.100000
+2026-06-14 21:48:42,213 [INFO] trading_bot.orders - TWAP Completed. Total Filled: 0.300000, Avg Price: 3521.80
+2026-06-14 21:48:42,214 [INFO] trading_bot.orders - -------------------- TWAP ALGORITHM END --------------------

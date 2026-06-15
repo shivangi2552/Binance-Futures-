@@ -1,0 +1,6 @@
+{
+  "name": "Binance Futures Order Runner",
+  "description": "An interactive, type-safe Python CLI bot and companion web dashboard for placing and logging orders on the Binance Futures Testnet (USDT-M), featuring direct REST integrations and an algorithmic TWAP execution engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
